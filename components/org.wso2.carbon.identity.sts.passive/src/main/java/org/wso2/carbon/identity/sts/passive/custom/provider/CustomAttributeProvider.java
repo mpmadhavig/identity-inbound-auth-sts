@@ -76,6 +76,7 @@ public class CustomAttributeProvider implements AttributeStatementProvider {
         } else {
             attributeBean.setQualifiedName(claim.getClaimType());
         }
+        attributeBean.setSimpleName(claim.getClaimType());
         attributeBean.setAttributeValues(claim.getValues());
 
         return attributeBean;
